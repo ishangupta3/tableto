@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A084DAC937DCB10D4616D92 /* Pods_Tableto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 042173377511DEAEE186F1AE /* Pods_Tableto.framework */; };
 		E44F29D71E749343009F0B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44F29D61E749343009F0B38 /* AppDelegate.swift */; };
 		E44F29D91E749343009F0B38 /*  ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44F29D81E749343009F0B38 /*  ViewController.swift */; };
 		E44F29DC1E749343009F0B38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44F29DA1E749343009F0B38 /* Main.storyboard */; };
 		E44F29DE1E749343009F0B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E44F29DD1E749343009F0B38 /* Assets.xcassets */; };
 		E44F29E11E749343009F0B38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E44F29DF1E749343009F0B38 /* LaunchScreen.storyboard */; };
+		E44F29E91E74A4AF009F0B38 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E44F29E81E74A4AF009F0B38 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		042173377511DEAEE186F1AE /* Pods_Tableto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tableto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C32B650D0B31791B31A0AF /* Pods-Tableto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tableto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tableto/Pods-Tableto.release.xcconfig"; sourceTree = "<group>"; };
 		E44F29D31E749343009F0B38 /* Tableto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tableto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44F29D61E749343009F0B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E44F29D81E749343009F0B38 /*  ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " ViewController.swift"; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		E44F29DD1E749343009F0B38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E44F29E01E749343009F0B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E44F29E21E749343009F0B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E44F29E81E74A4AF009F0B38 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F5EC2926E586FA548D55B399 /* Pods-Tableto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tableto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tableto/Pods-Tableto.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A084DAC937DCB10D4616D92 /* Pods_Tableto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		96ABFAAF9C6EA56AF987B464 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5EC2926E586FA548D55B399 /* Pods-Tableto.debug.xcconfig */,
+				67C32B650D0B31791B31A0AF /* Pods-Tableto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9A748764086694FCF1690F5E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				042173377511DEAEE186F1AE /* Pods_Tableto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E44F29CA1E749343009F0B38 = {
 			isa = PBXGroup;
 			children = (
 				E44F29D51E749343009F0B38 /* Tableto */,
 				E44F29D41E749343009F0B38 /* Products */,
+				96ABFAAF9C6EA56AF987B464 /* Pods */,
+				9A748764086694FCF1690F5E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				E44F29DD1E749343009F0B38 /* Assets.xcassets */,
 				E44F29DF1E749343009F0B38 /* LaunchScreen.storyboard */,
 				E44F29E21E749343009F0B38 /* Info.plist */,
+				E44F29E81E74A4AF009F0B38 /* GoogleService-Info.plist */,
 			);
 			path = Tableto;
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E44F29E51E749343009F0B38 /* Build configuration list for PBXNativeTarget "Tableto" */;
 			buildPhases = (
+				A4FBF2538EE4DB9F03B17E2F /* [CP] Check Pods Manifest.lock */,
 				E44F29CF1E749343009F0B38 /* Sources */,
 				E44F29D01E749343009F0B38 /* Frameworks */,
 				E44F29D11E749343009F0B38 /* Resources */,
+				B71A1F09C3EF66039A2B98C8 /* [CP] Embed Pods Frameworks */,
+				45F55316D2201E1E157B2C5A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				E44F29E11E749343009F0B38 /* LaunchScreen.storyboard in Resources */,
+				E44F29E91E74A4AF009F0B38 /* GoogleService-Info.plist in Resources */,
 				E44F29DE1E749343009F0B38 /* Assets.xcassets in Resources */,
 				E44F29DC1E749343009F0B38 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45F55316D2201E1E157B2C5A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tableto/Pods-Tableto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4FBF2538EE4DB9F03B17E2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B71A1F09C3EF66039A2B98C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tableto/Pods-Tableto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E44F29CF1E749343009F0B38 /* Sources */ = {
@@ -257,12 +336,13 @@
 		};
 		E44F29E61E749343009F0B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5EC2926E586FA548D55B399 /* Pods-Tableto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VFH547A942;
 				INFOPLIST_FILE = Tableto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.ishangupta3.Tableto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishangupta3.Tableto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -270,12 +350,13 @@
 		};
 		E44F29E71E749343009F0B38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C32B650D0B31791B31A0AF /* Pods-Tableto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VFH547A942;
 				INFOPLIST_FILE = Tableto/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.github.ishangupta3.Tableto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ishangupta3.Tableto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
